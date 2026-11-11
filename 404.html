@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Page not found — Open Ronin</title>
+<title>Page not found Ã¢â‚¬â€ Open Ronin</title>
 <meta name="description" content="That page does not exist on Open Ronin.">
 <link rel="canonical" href="https://openronin.com">
 <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
@@ -32,23 +32,8 @@
     min-height: 100vh;
   }
 
-  .vote-banner {
-    display: block;
-    width: 100%;
-    background: #A71820;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    padding: 10px 16px;
-    transition: background 0.2s;
-  }
-  .vote-banner:hover { background: #C4453C; color: #fff; }
-
   .wrap {
-    min-height: calc(100vh - 42px);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,20 +62,8 @@
   }
   .btn:hover { opacity: 0.9; }
 </style>
-<!-- TODO: Vote for Ronin URL from Austin -->
-<script>
-  // Single place to set the Vote for Ronin URL.
-  const VOTE_FOR_RONIN_URL = '#vote-url-tbd';
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('[data-vote-for-ronin]').forEach((el) => {
-      el.setAttribute('href', VOTE_FOR_RONIN_URL);
-    });
-  });
-</script>
 </head>
 <body>
-  <!-- TODO: Vote for Ronin URL from Austin -->
-  <a class="vote-banner" data-vote-for-ronin href="#vote-url-tbd">Vote for Ronin</a>
   <div class="wrap">
     <a href="/"><img class="logo-img" src="/assets/logo-lockup-dark.svg" alt="Open Ronin"></a>
     <h1>Page not found</h1>
