@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found — Open Ronin</title>
+<meta name="description" content="That page does not exist on Open Ronin.">
+<link rel="canonical" href="https://openronin.com">
+<link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#09090b">
+<meta name="robots" content="noindex">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #09090b;
+    --border: #1e1e24;
+    --text: #e4e4e7;
+    --text-dim: #71717a;
+    --accent: #A71820;
+    --accent2: #C4453C;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  .vote-banner {
+    display: block;
+    width: 100%;
+    background: #A71820;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding: 10px 16px;
+    transition: background 0.2s;
+  }
+  .vote-banner:hover { background: #C4453C; color: #fff; }
+
+  .wrap {
+    min-height: calc(100vh - 42px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 48px 24px;
+  }
+  .logo-img { height: 32px; width: auto; margin-bottom: 32px; }
+  h1 {
+    font-size: clamp(36px, 6vw, 56px);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    margin-bottom: 12px;
+  }
+  p { color: var(--text-dim); font-size: 16px; margin-bottom: 28px; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    background: var(--accent);
+    color: #fff;
+  }
+  .btn:hover { opacity: 0.9; }
+</style>
+<!-- TODO: Vote for Ronin URL from Austin -->
+<script>
+  // Single place to set the Vote for Ronin URL.
+  const VOTE_FOR_RONIN_URL = '#vote-url-tbd';
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('[data-vote-for-ronin]').forEach((el) => {
+      el.setAttribute('href', VOTE_FOR_RONIN_URL);
+    });
+  });
+</script>
+</head>
+<body>
+  <!-- TODO: Vote for Ronin URL from Austin -->
+  <a class="vote-banner" data-vote-for-ronin href="#vote-url-tbd">Vote for Ronin</a>
+  <div class="wrap">
+    <a href="/"><img class="logo-img" src="/assets/logo-lockup-dark.svg" alt="Open Ronin"></a>
+    <h1>Page not found</h1>
+    <p>That path doesn't exist. Head back to the Open Ronin site.</p>
+    <a class="btn" href="/">Back to openronin.com</a>
+  </div>
+</body>
+</html>
